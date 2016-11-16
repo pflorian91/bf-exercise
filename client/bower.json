@@ -1,0 +1,28 @@
+{
+  "name": "bf-exercise",
+  "description": "BF Exercise",
+  "main": "index.js",
+  "authors": [
+    "Florian Popa <florian@webgenerals.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "BF"
+  ],
+  "homepage": "https://github.com/pflorian91/bf-exercise",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "ngstorage": "^0.3.11",
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7"
+  }
+}

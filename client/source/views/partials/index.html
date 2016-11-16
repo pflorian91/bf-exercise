@@ -1,0 +1,39 @@
+<!-- if not logged in -->
+<div class="row" ng-if="false === user">
+    <div class="col-xs-12">
+        <h2>Hello there</h2>
+        <p>Please access your account in order to work on todos.</p>
+        <a href="/login" class="btn btn-default">Login</a>
+        <a href="/signup" class="btn btn-primary">Signup</a>
+    </div>
+</div>
+
+<!-- if logged in -->
+<div class="row" ng-if="user">
+    <div class="col-xs-12">
+
+        <h2>Hello {{ user.name }}</h2>
+
+        <p>Manage your todos..</p>
+
+        Items in list: {{ todos.length }}
+
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="todo in todos">
+                {{ todo.text }}
+                <button class="btn btn-default pull-right" type="button" ng-click="deleteItem(todo._id)">Delete</button>
+            </li>
+        </ul>
+
+        <div class="form-group">
+            <label class="control-label">Add item</label>
+            <div class="input-group">
+                <input type="text" class="form-control" name="itemText" ng-model="newItem">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" ng-click="createItem(newItem)">Add</button>
+                </span>
+            </div>
+        </div>
+
+    </div>
+</div>

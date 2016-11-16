@@ -1,0 +1,50 @@
+{
+  "name": "bf-exercise",
+  "version": "1.0.0",
+  "description": "BF Exercise",
+  "main": "index.js",
+  "private": "true",
+  "scripts": {
+    "prebower": "npm install",
+    "bower": "./node_modules/.bin/bower",
+    "pregulp": "npm run bower install",
+    "gulp": "./node_modules/.bin/gulp default",
+    "gulp-watch": "./node_modules/.bin/gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preserve": "npm run gulp",
+    "serve": "./node_modules/.bin/http-server ./build -o --cors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pflorian91/bf-exercise.git"
+  },
+  "keywords": [
+    "BF"
+  ],
+  "author": "Florian Popa <florian@webgenerals.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pflorian91/bf-exercise/issues"
+  },
+  "homepage": "https://github.com/pflorian91/bf-exercise#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "bower": "^1.7.9",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.4",
+    "gulp-util": "^3.0.7",
+    "http-server": "^0.9.0",
+    "imagemin-pngquant": "^5.0.0",
+    "minimist": "^1.2.0",
+    "randomstring": "^1.1.5",
+    "sass-lint": "^1.8.2"
+  }
+}

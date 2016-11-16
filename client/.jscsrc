@@ -1,0 +1,37 @@
+{
+    "preset": "crockford",
+    "disallowDanglingUnderscores": null,
+    "disallowObjectKeysOnNewLine": null,
+    "requireCommaBeforeLineBreak": null,
+    "disallowTrailingWhitespace": null,
+    "requireVarDeclFirst": null,
+    "validateLineBreaks": "LF",
+    "jsDoc": {
+        "checkAnnotations": {
+            "preset": "jsdoc3",
+            "extra": {
+                "added": true,
+                "updated": true,
+                "memberOf": true
+            }
+        },
+        "checkParamNames": true,
+        "requireParamTypes": true,
+        "requireParamDescription": true,
+        "checkRedundantParams": true,
+        "requireReturnTypes": true,
+        "checkReturnTypes": true,
+        "checkTypes": true,
+        "enforceExistence": "exceptExports"
+    },
+    "fileExtensions": [
+        ".js",
+        ".jsx"
+    ],
+    "excludeFiles": [
+        "node_modules/**",
+        "coverage/**",
+        "test",
+        "docs/**"
+    ]
+}
