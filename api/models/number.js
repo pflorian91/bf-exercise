@@ -7,7 +7,8 @@
 var mongoose = require('mongoose'),
     Schema = mongoose.Schema,
     NumberSchema = new Schema({
-        number: Number
+        number: Number,
+        userCode: String
     });
 
 module.exports = mongoose.model('Number', NumberSchema);

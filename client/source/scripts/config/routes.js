@@ -16,18 +16,6 @@
                     templateUrl: 'views/partials/index.html',
                     controller:  'IndexController'
                 })
-                .when('/signup', {
-                    templateUrl: 'views/partials/signup.html',
-                    controller:  'SignupController'
-                })
-                .when('/login', {
-                    templateUrl: 'views/partials/login.html',
-                    controller:  'LoginController'
-                })
-                .when('/logout', {
-                    controller:  'LogoutController',
-                    template: ""
-                })
                 .otherwise({
                     redirectTo: '/'
                 });
