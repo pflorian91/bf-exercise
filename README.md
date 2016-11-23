@@ -32,8 +32,6 @@ To serve the client please run the following command (in a new terminal):
 
 It will automatically open a page in your default browser pointing to http://127.0.0.1:8080/.
 
-In order to access and manage the TODOs you must login/signup.
-
 ---------------
 `mongodb` contains a Vagrant configuration for the MongoDB server.
 This is optional as you may have installed locally your own MongoDB server.
