@@ -1,7 +1,7 @@
 /**
- * number created on 11/23/16 6:57 PM.
+ * NumberSchema created on 11/23/16 6:57 PM.
  *
- * @description [To be completed]
+ * @description Holds information regarding the number
  * @author Florian Popa <florian@webgenerals.com>
  */
 var mongoose = require('mongoose'),

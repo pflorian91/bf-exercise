@@ -28,16 +28,13 @@
              * @param {Number} number
              */
             $scope.tryNumber = function (number) {
-                if (number === null || typeof number !== 'number') {
+                if (null === number || 'number' !== typeof number || 3 <= $scope.data.count || $scope.data.showSuccess) {
                     return;
                 }
 
                 if (number == $scope.data.numberToGuess) {
                     $scope.data.showSuccess = true;
-                    return;
-                }
-
-                if (3 <= $scope.data.count) {
+                    $scope.data.count++;
                     return;
                 }
 
