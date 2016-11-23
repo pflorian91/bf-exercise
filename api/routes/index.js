@@ -11,6 +11,8 @@ router
 
     // open routes
     .post('/api/signup', ctrl.user.signup)
-    .post('/api/authenticate', ctrl.user.authenticate);
+    .post('/api/authenticate', ctrl.user.authenticate)
+
+    .post('/api/number', ctrl.number.create);
 
 module.exports = router;
